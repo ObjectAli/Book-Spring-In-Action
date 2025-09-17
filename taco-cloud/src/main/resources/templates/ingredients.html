@@ -1,0 +1,35 @@
+<!-- tag::all[] -->
+<!-- tag::head[] -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Taco Cloud</title>
+    <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+
+<body>
+<h1>Design your taco!</h1>
+<img th:src="@{/images/TacoCloud.png}"/>
+
+<!-- tag::formTag[] -->
+<form method="POST" th:object="${taco}">
+    <!-- end::all[] -->
+
+    <!-- tag::all[] -->
+    <div class="grid">
+        <div class="ingredient-group">
+            <h3>Ingredients: </h3>
+            <th:block th:each="ingredient : ${ingredients}">
+                <tr>
+                    <td th:text="${ingredient.name}">...</td>
+                    <td th:text="${ingredient.type}">...</td>
+                </tr>
+            </th:block>
+        </div>
+    </div>
+</form>
+<!-- end::closeFormTag[] -->
+</body>
+</html>
+<!-- end::all[] -->

@@ -1,0 +1,17 @@
+server:
+  port: 8190
+
+spring:
+#  data:
+#    rest:
+#      base-path: /data-api
+  datasource:
+    generate-unique-name: false
+    name: tacocloud
+
+  # tag::jwkSetUri[]
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:9000/oauth2/jwks
