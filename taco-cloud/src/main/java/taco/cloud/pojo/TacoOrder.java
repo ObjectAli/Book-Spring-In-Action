@@ -8,6 +8,8 @@ import java.util.List;
 @Data
 public class TacoOrder {
 
+    private final String id;
+
     //    @NotBlank(message="Delivery name is required")
     private String deliveryName;
 
