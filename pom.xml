@@ -13,6 +13,7 @@
     <modules>
         <module>admin-server</module>
         <module>taco-cloud</module>
-        <module>taco-cloud/taco-cloud-data-cassandra</module>
+        <module>taco-cloud/taco-cloud-security</module>
+        <module>taco-cloud/taco-cloud-web</module>
     </modules>
 </project>
