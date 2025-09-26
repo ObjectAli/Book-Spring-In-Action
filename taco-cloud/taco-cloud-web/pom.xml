@@ -4,10 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>taco-cloud-data</artifactId>
+    <artifactId>taco-cloud-wev</artifactId>
     <packaging>jar</packaging>
-    <name>taco-cloud-data</name>
-    <description>Taco Cloud Data</description>
+
+    <name>taco-cloud-web</name>
+    <description>Taco Cloud WEB Configuration</description>
 
     <parent>
         <groupId>sia</groupId>
@@ -22,21 +23,13 @@
     </properties>
 
     <dependencies>
-        <!-- TacoCloud dependencies -->
-        <dependency>
-            <groupId>sia</groupId>
-            <artifactId>taco-cloud-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <!-- Necessary Boot starters -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-rest</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -48,18 +41,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
-        </dependency>
-
-        <!-- Test dependencies -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>de.flapdoodle.embed</groupId>
-            <artifactId>de.flapdoodle.embed.mongo</artifactId>
         </dependency>
     </dependencies>
 

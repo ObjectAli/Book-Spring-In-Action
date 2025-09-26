@@ -23,7 +23,10 @@
     </properties>
 
     <modules>
-        <module>taco-cloud-data</module>
         <module>taco-cloud-domain</module>
+        <module>taco-cloud-data-cassandra</module>
+        <module>taco-cloud-data-mongodb</module>
+        <module>taco-cloud-security</module>
+        <module>taco-cloud-web</module>
     </modules>
 </project>
