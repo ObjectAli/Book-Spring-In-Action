@@ -1,10 +1,8 @@
 package tacos.data;
 
-import org.springframework.data.repository.reactive.ReactiveCrudRepository;
-
+import org.springframework.data.repository.PagingAndSortingRepository;
 import tacos.domain.Taco;
 
-
-public interface TacoRepository
-        extends ReactiveCrudRepository<Taco, String> {
+//@Repository
+public interface TacoRepository extends PagingAndSortingRepository<Taco, String> {
 }

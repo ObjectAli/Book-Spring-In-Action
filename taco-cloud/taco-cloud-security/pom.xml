@@ -26,14 +26,15 @@
         <dependency>
             <groupId>sia</groupId>
             <artifactId>taco-cloud-domain</artifactId>
-            <version>${project.version}</version>
+            <version>${tacocloud.version}</version>
         </dependency>
 
         <dependency>
             <groupId>sia</groupId>
-            <artifactId>taco-cloud-data-mongodb</artifactId>
-            <version>${project.version}</version>
+            <artifactId>taco-cloud-data-jpa</artifactId>
+            <version>${tacocloud.version}</version>
         </dependency>
+
 
         <!-- Necessary Boot starters -->
         <dependency>

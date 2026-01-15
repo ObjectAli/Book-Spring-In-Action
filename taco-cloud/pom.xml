@@ -26,7 +26,10 @@
         <module>taco-cloud-domain</module>
         <module>taco-cloud-data-cassandra</module>
         <module>taco-cloud-data-mongodb</module>
+        <module>taco-cloud-data-jpa</module>
         <module>taco-cloud-security</module>
+        <module>taco-cloud-api</module>
         <module>taco-cloud-web</module>
+        <module>taco-cloud-starter</module>
     </modules>
 </project>

@@ -15,5 +15,9 @@
         <module>taco-cloud</module>
         <module>taco-cloud/taco-cloud-security</module>
         <module>taco-cloud/taco-cloud-web</module>
+        <module>taco-cloud/taco-cloud-api</module>
+        <module>taco-cloud/taco-cloud-starter</module>
+        <module>taco-cloud/taco-cloud-domain</module>
+        <module>taco-cloud/taco-cloud-data-jpa</module>
     </modules>
 </project>
