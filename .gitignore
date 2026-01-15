@@ -10,6 +10,10 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# IDEA files
+/.idea/
+*.iml
+
 # Package Files #
 *.jar
 *.war
@@ -22,5 +26,15 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
-/.idea/
+
+# target directories
 /taco-cloud/target/
+/taco-cloud/taco-cloud-api/target
+/taco-cloud/taco-cloud-starter/target
+/taco-cloud/taco-cloud-jpa/target
+/taco-cloud/taco-cloud-data/target
+/taco-cloud/taco-cloud-security/target
+/taco-cloud/taco-cloud-web/target
+/taco-cloud/taco-cloud-data-cassandra/target
+/taco-cloud/taco-cloud-domain/target
+/taco-cloud/taco-cloud-data-mongodb/target

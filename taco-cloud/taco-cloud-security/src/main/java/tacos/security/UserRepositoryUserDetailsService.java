@@ -23,7 +23,7 @@ public class UserRepositoryUserDetailsService implements UserDetailsService {
             throws UsernameNotFoundException {
 
         // TODO: Replace with reactive equivalent instead of blocking
-        User user = userRepo.findByUsername(username).block();
+        User user = userRepo.findByUsername(username);
         if (user != null) {
             return user;
         }

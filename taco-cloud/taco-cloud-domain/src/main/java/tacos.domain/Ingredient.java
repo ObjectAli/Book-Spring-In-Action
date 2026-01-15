@@ -1,20 +1,18 @@
 package tacos.domain;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.*;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Data
 @AllArgsConstructor
+//@RequiredArgsConstructor
 @NoArgsConstructor(access=AccessLevel.PRIVATE, force=true)
-@Document
+@Entity
 public class Ingredient {
 
-    @Id //Маркер для JDBC, что поля является идентификатором объекта Ingredient
+    @Id
     private String id;
     private String name;
     private Type type;

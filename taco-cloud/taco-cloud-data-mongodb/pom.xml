@@ -26,7 +26,7 @@
         <dependency>
             <groupId>sia</groupId>
             <artifactId>taco-cloud-domain</artifactId>
-            <version>${project.version}</version>
+            <version>${tacocloud.version}</version>
         </dependency>
 
         <!-- Necessary Boot starters -->
